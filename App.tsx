@@ -35,7 +35,7 @@ function App(): React.JSX.Element {
     return {
       height: diagonal,
       width: diagonal,
-      // opacity: interpolate(scale.value, [0, 0.7, 0.9], [1, 1, 0]),
+      opacity: interpolate(scale.value, [0, 0.7, 0.9], [1, 1, 0]),
       transform: [{scale: scale.value}],
       borderRadius: diagonal / 2,
     };
@@ -58,7 +58,7 @@ function App(): React.JSX.Element {
       cancelAnimation(scale);
       scale.value = 0;
       setShowLoader(false);
-    }, 10000);
+    }, 11000);
   };
 
   const onPress = () => {
